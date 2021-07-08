@@ -15,6 +15,7 @@ public class ElsaEntityRenderer extends MobEntityRenderer<ElsaEntity, ElsaEntity
     @Override
     public Identifier getTexture(ElsaEntity entity) 
     {
+    	System.out.println();
         return new Identifier("frozeniimod", "textures/entity/elsa/elsa.png");
     }
     
