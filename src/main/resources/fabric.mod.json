@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "frozeniimod",
+  "version": "1.0.0",
+
+  "name": "Frozen 2 Mod",
+  "description": "Thank you for downloading Frozen 2 Mod! This mod provides you the best Frozen experience. Contents including such as: Enchanted Forest, Spirit Blocks, etc. Also comes with Anna and Elsa! I hope you enjoy the mod! If you find any bug, be sure to report them in the issue tracker. Credits: Disney - Making Frozen 2, W2D5W8 - Anna skin from PlanetMinecraft, FanofWak - Elsa skin from PlanetMinecraft, Schnabbellchen - Fifth Spirit Elsa skin from PlanetMinecraft",
+  "authors": [
+    "Themoviea"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/frozeniimod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+  	"rei_plugins": [
+  		"net.themoviea.frozeniimod.rei_plugins.SpiritPowerCrafterPlugin"
+  	],
+    "main": [
+      "net.themoviea.frozeniimod.Frozen2Mod"
+    ],
+   "client": [
+      "net.themoviea.frozeniimod.Frozen2ModClient"
+   	]
+  },
+  "mixins": [
+    "frozen2mod.mixins.json"
+  ],
+
+  "depends": {
+    "cardinal-components-base": ">=2.6.0",
+    "cardinal-components-entity": ">=2.6.0",
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

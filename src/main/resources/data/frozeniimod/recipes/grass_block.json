@@ -1,0 +1,19 @@
+{
+  "type": "frozeniimod:spirit_power_crafting",
+  "group": "grass_block",
+  "ingredients": [
+ 	{
+  		"item": "frozeniimod:wind_spirit_crystal"
+  	},
+  	{
+  		"item": "minecraft:stone"
+  	},
+  	{
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+  	"item": "minecraft:grass_block",
+  	"count": 1
+  }
+}

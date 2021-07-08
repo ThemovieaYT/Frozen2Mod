@@ -1,0 +1,43 @@
+{
+  "type": "frozeniimod:spirit_power_crafting",
+  "group": "acacia_boat",
+  "ingredients": [
+  	{
+  		"item": "frozeniimod:fire_spirit_crystal"
+  	},
+  	{
+  		"item": "frozeniimod:earth_spirit_crystal"
+  	},
+  	{
+  		"item": "frozeniimod:wind_spirit_crystal"
+  	},
+  	{
+  		"item": "frozeniimod:water_spirit_crystal"
+  	},
+  	{
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "minecraft:acacia_planks"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:oak_planks"
+    },
+    {
+      "item": "minecraft:grass_block"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    }
+  ],
+  "result": {
+  	"item": "minecraft:acacia_boat",
+  	"count": 1
+  }
+}

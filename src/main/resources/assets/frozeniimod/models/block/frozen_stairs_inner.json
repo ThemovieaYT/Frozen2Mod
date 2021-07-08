@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "frozeniimod:block/frozen_planks",
+    "top": "frozeniimod:block/frozen_planks",
+    "side": "frozeniimod:block/frozen_planks"
+  }
+}

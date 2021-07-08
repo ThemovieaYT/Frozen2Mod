@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "frozeniimod:block/wind_spirit_crystal_block"
+    }
+  }

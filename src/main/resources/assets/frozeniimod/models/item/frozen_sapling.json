@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "frozeniimod:block/frozen_sapling"
+  }
+}

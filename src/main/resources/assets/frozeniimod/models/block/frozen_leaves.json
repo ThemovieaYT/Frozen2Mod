@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/leaves",
+    "textures": {
+      "all": "frozeniimod:block/leaves_frozen"
+    }
+  }

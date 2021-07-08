@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "frozeniimod:block/earth_spirit_ore"
+    }
+  }

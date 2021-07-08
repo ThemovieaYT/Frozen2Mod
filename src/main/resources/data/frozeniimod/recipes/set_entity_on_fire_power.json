@@ -1,0 +1,16 @@
+{
+  "type": "frozeniimod:spirit_power_crafting",
+  "group": "set_entity_on_fire_attack_power",
+  "ingredients": [
+  	{
+  		"item": "frozeniimod:fire_spirit_crystal"
+  	},
+  	{
+  		"item": "minecraft:flint_and_steel"
+  	}
+  ],
+  "result": {
+  	"item": "frozeniimod:set_entity_on_fire_power",
+  	"count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "variants": {
+      "axis=x": {
+        "model": "frozeniimod:block/enchanted_log_horizontal",
+        "x": 90,
+        "y": 90
+      },
+      "axis=y": {
+        "model": "frozeniimod:block/enchanted_log"
+      },
+      "axis=z": {
+        "model": "frozeniimod:block/enchanted_log_horizontal",
+        "x": 90
+      }
+    }
+  }
+
+  

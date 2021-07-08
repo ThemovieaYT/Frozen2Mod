@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "frozeniimod:block/enchanted_slab"
+    },
+    "type=double": {
+      "model": "frozeniimod:block/enchanted_planks"
+    },
+    "type=top": {
+      "model": "frozeniimod:block/enchanted_slab_top"
+    }
+  }
+}

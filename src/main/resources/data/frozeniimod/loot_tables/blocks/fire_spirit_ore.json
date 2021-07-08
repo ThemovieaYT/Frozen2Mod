@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "frozeniimod:fire_spirit_ore"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:match_tool"
+          }
+        ]
+      }
+    ]
+  }

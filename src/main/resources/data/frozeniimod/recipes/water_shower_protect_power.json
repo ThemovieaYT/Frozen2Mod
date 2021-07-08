@@ -1,0 +1,16 @@
+{
+  "type": "frozeniimod:spirit_power_crafting",
+  "group": "set_entity_on_fire_attack_power",
+  "ingredients": [
+  	{
+  		"item": "frozeniimod:water_spirit_crystal"
+  	},
+  	{
+  		"item": "minecraft:bucket"
+  	}
+  ],
+  "result": {
+  	"item": "frozeniimod:water_shower_protect_power",
+  	"count": 1
+  }
+}

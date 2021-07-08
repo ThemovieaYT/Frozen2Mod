@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column_horizontal",
+    "textures": {
+      "end": "frozeniimod:block/enchanted_log_top",
+      "side": "frozeniimod:block/enchanted_log"
+    }
+  }

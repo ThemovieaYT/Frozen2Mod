@@ -1,0 +1,33 @@
+{
+  "type": "frozeniimod:spirit_power_crafting",
+  "ingredients": [
+  	{
+  		"item": "frozeniimod:fire_spirit_crystal"
+  	},
+  	{
+  		"item": "frozeniimod:earth_spirit_crystal"
+  	},
+  	{
+  		"item": "frozeniimod:wind_spirit_crystal"
+  	},
+  	{
+  		"item": "frozeniimod:water_spirit_crystal"
+  	},
+  	{
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "minecraft:acacia_planks"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "result": {
+  	"item": "minecraft:redstone",
+  	"count": 1
+  }
+}

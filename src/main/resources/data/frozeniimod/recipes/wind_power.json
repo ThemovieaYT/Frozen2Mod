@@ -1,0 +1,17 @@
+{
+  "type": "frozeniimod:spirit_power_crafting",
+  "group": "wind_blow_power",
+  "ingredients": [
+  	{
+  		"item": "frozeniimod:wind_spirit_crystal"
+  	},
+  	{
+  		"item": "minecraft:gunpowder",
+  		"count": 5
+  	}
+  ],
+  "result": {
+  	"item": "frozeniimod:wind_power",
+  	"count": 1
+  }
+}

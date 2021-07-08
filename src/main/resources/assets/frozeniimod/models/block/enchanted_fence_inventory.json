@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "frozeniimod:block/enchanted_planks"
+  }
+}

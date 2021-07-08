@@ -1,0 +1,94 @@
+{
+	"text.arendellian_reputation": "Reputation: ",
+	"container.spirit_power_crafting": "Spirit Power Crafting",
+	"category.rei.spirit_power_crafting": "Spirit Power Crafting",
+	
+	"cannotusepower.reason.notonfire": "Can not use power because you are not on fire!",
+	
+    "biome.frozeniimod.enchanted_forest": "Enchanted Forest",
+    
+    "item.frozeniimod.fire_power": "Set Entity on Fire Power",
+    "item.frozeniimod.air_power": "Air Explosion Power",
+    "item.frozeniimod.earth_spike_power": "Earth Spike Power",
+    "item.frozeniimod.water_power": "Water Power",
+    
+    "item.frozeniimod.water_protect": "Water Shower Protection",
+    "item.frozeniimod.air_bridge": "Air Bridge",
+    
+    "itemGroup.frozeniimod.frozeniiblocks": "Frozen 2 Blocks",
+    "itemGroup.frozeniimod.frozeniiitems": "Frozen 2 Items",
+    "itemGroup.frozeniimod.frozeniimisc": "Frozen 2 Misc",
+    "itemGroup.frozeniimod.frozeniidecorationblocks": "Frozen 2 Decoration Blocks",
+    "itemGroup.frozeniimod.frozeniiredstone": "Frozen 2 Redstone",
+  	
+  	"block.frozeniimod.enchanted_sapling": "Enchanted Sapling",
+  	"block.frozeniimod.enchanted_log": "Enchanted log",
+  	"block.frozeniimod.enchanted_leaves": "Enchanted Leaves",
+  	"block.frozeniimod.enchanted_planks": "Enchanted Planks",
+  	"block.frozeniimod.enchanted_fence": "Enchanted Fence",
+  	"block.frozeniimod.enchanted_pressure_plate": "Enchanted Pressure Plate",
+  	"block.frozeniimod.enchanted_stairs": "Enchanted Stairs",
+  	"block.frozeniimod.enchanted_slab": "Enchanted Slab",
+  	"block.frozeniimod.enchanted_door": "Enchanted Door",
+  	"block.frozeniimod.enchanted_fence_gate": "Enchanted Fence Gate",
+  	"block.frozeniimod.enchanted_trapdoor": "Enchanted Trapdoor",
+  	
+  	"block.frozeniimod.frozen_sapling": "Frozen Sapling",
+  	"block.frozeniimod.frozen_log": "Frozen log",
+  	"block.frozeniimod.frozen_leaves": "Frozen Leaves",
+  	"block.frozeniimod.frozen_planks": "Frozen Planks",
+  	"block.frozeniimod.frozen_fence": "Frozen Fence",
+  	"block.frozeniimod.frozen_pressure_plate": "Frozen Pressure Plate",
+  	"block.frozeniimod.frozen_stairs": "Frozen Stairs",
+  	"block.frozeniimod.frozen_slab": "Frozen Slab",
+  	"block.frozeniimod.frozen_door": "Frozen Door",
+  	"block.frozeniimod.frozen_fence_gate": "Frozen Fence Gate",
+  	"block.frozeniimod.frozen_trapdoor": "Frozen Trapdoor",
+
+    "block.frozeniimod.ice_wall": "Ice Wall",
+    "block.frozeniimod.ice_pressure_plate": "Ice Pressure Plate",
+    "block.frozeniimod.ice_stairs": "Ice Stairs",
+    "block.frozeniimod.ice_slab": "Ice Slab",
+    "block.frozeniimod.ice_door": "Ice Door",
+    "block.frozeniimod.ice_gate": "Ice Gate",
+    
+    "block.frozeniimod.packed_ice_wall": "Packed Ice Wall",
+    "block.frozeniimod.packed_ice_pressure_plate": "Packed Ice Pressure Plate",
+    "block.frozeniimod.packed_ice_stairs": "Packed Ice Stairs",
+    "block.frozeniimod.packed_ice_slab": "Packed Ice Slab",
+    "block.frozeniimod.packed_ice_door": "Packed Ice Door",
+    "block.frozeniimod.packed_ice_gate": "Packed Ice Gate",
+    
+    "block.frozeniimod.dark_stone": "Dark Stone",
+    "block.frozeniimod.dark_stone_pebbles": "Dark Stone Pebbles",
+    "block.frozeniimod.dark_stone_slab": "Dark Stone Slab",
+    "block.frozeniimod.dark_stone_wall": "Dark Stone Wall",
+    "block.frozeniimod.dark_stone_pressure_plate": "Dark Stone Pressure Plate",
+    "block.frozeniimod.dark_stone_stairs": "Dark Stone Stairs",
+    
+    "block.frozeniimod.fire_spirit_ore": "Fire Spirit Ore",
+    "block.frozeniimod.earth_spirit_ore": "Earth Spirit Ore",
+    "block.frozeniimod.wind_spirit_ore": "Wind Spirit Ore",
+    "block.frozeniimod.water_spirit_ore": "Water Spirit ore",
+
+    "block.frozeniimod.fire_spirit_crystal_block": "Fire Spirit Crystal Block",
+    "block.frozeniimod.earth_spirit_crystal_block": "Earth Spirit Crystal Block",
+    "block.frozeniimod.wind_spirit_crystal_block": "Wind Spirit Crystal Block",
+    "block.frozeniimod.water_spirit_crystal_block": "Water Spirit Crystal Block",
+    "block.frozeniimod.fifth_spirit_crystal_block": "Fifth Spirit Crystal Block",
+
+    "item.frozeniimod.fire_spirit_crystal": "Fire Spirit Crystal",
+    "item.frozeniimod.earth_spirit_crystal": "Earth Spirit Crystal",
+    "item.frozeniimod.wind_spirit_crystal": "Wind Spirit Crystal",
+    "item.frozeniimod.water_spirit_crystal": "Water Spirit Crystal",
+    "item.frozeniimod.fifth_spirit_crystal": "Fifth Spirit Crystal",
+    
+    "text.frozeniimod.elsa_intro": "Hey, there Player! Welcome to Arendelle!",
+    "text.frozeniimod.longspeaking": "I can speak long, like this! BRBRBRBRBRBRBRBBRBRBRBRBRBBRBRBRBBRBRBRBRBRBRBBRBRBRBBRBRBRBRBRBRBRBR",
+    
+    "gui.frozeniimod.exit": "Exit Conversation",
+    "gui.frozeniimod.hi": "Hi!",
+    "gui.frozeniimod.test5": "How long can you speak?",
+    
+    "death.attack.icePower": "%1$s was killed by the Frozen Heart Curse"
+}
