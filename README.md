@@ -15,6 +15,6 @@ The Avatar style PVP (There's spirit power items which has specific abilities), 
 
 ## The user won't get bored out of it in a short period of time
 
-This is where fanfiction content kicks in. I plan on to provide updates and add stuff far from what the original movie has to offer.
+This is where fanfiction content kicks in. I plan on to provide add-ons and add stuff far from what the original movie has to offer.
 The list of fanfictions that will be included is provided here:
 https://frozen-2-minecraft-mod-themoviea.fandom.com/wiki/Fanfiction_Contents 
