@@ -79,18 +79,6 @@ public class AnnaEntity extends AbstractCommunicationEntity implements Angerable
 	}
 	
 	@Override
-	public boolean getQueen() 
-	{
-		return queen;
-	}
-	
-	@Override
-	public void setQueen(boolean queen) 
-	{
-		this.queen = queen;
-	}
-	
-	@Override
 	public boolean canTarget(EntityType<?> type) 
 	{
 		return type == ModEntities.ELSA ? false : super.canTarget(type);
