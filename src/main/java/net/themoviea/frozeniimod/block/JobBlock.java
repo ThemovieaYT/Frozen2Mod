@@ -1,9 +1,15 @@
 package net.themoviea.frozeniimod.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockEntityProvider;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.world.BlockView;
+import net.themoviea.frozeniimod.Frozen2Mod;
+import net.themoviea.frozeniimod.block.entity.JobBlockEntity;
+import net.themoviea.frozeniimod.init.ModBlocks;
 import net.themoviea.themovieapi_village.village.EntityProfession;
 
-public class JobBlock extends Block {
+public class JobBlock extends Block implements BlockEntityProvider {
 	private final EntityProfession profession;
 
 	public JobBlock(EntityProfession profession, Settings settings) {
@@ -14,6 +20,10 @@ public class JobBlock extends Block {
 	public EntityProfession getProfession() {
 		return this.profession;
 	}
-	
-	
+
+	@Override
+	public BlockEntity createBlockEntity(BlockView world) {
+		// TODO Auto-generated method stub
+		return new JobBlockEntity(ModBlocks.JOB_BLOCK_ENTITY);
+	}
 }

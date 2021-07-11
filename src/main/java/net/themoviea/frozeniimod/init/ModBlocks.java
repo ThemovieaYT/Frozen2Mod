@@ -15,14 +15,18 @@ import net.minecraft.block.SlabBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.block.WallBlock;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.registry.Registry;
 import net.themoviea.frozeniimod.block.FrozenIIModDoorBlock;
 import net.themoviea.frozeniimod.block.FrozenIIModOreBlock;
 import net.themoviea.frozeniimod.block.FrozenIIModPressurePlateBlock;
 import net.themoviea.frozeniimod.block.FrozenIIModSaplingBlock;
 import net.themoviea.frozeniimod.block.FrozenIIModStairsBlock;
 import net.themoviea.frozeniimod.block.FrozenIIModTrapdoorBlock;
+import net.themoviea.frozeniimod.block.JobBlock;
 import net.themoviea.frozeniimod.block.SpiritPowerCrafterBlock;
+import net.themoviea.frozeniimod.block.entity.JobBlockEntity;
 import net.themoviea.frozeniimod.block.inventory_blocks.SpiritPowerCraftingBlock;
 import net.themoviea.frozeniimod.block.sapling.EnchantedSaplingGenerator;
 import net.themoviea.frozeniimod.block.sapling.FrozenSaplingGenerator;
@@ -33,8 +37,8 @@ import net.themoviea.themovieapi_base.registering.EasyRegister;
 
 public class ModBlocks 
 {
-	//This is for registering all the blocks that are currently implemented in the mod.
-	
+	public static final BlockEntityType<JobBlockEntity> JOB_BLOCK_ENTITY;
+
 	
 	//Enchanted Tree
     public static final PillarBlock ENCHANTED_TREE_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD, MaterialColor.WHITE).hardness(2.0f).resistance(2.0f).sounds(BlockSoundGroup.WOOD));
@@ -101,6 +105,7 @@ public class ModBlocks
     
     //Job Blocks
     
+    public static final JobBlock JOB_BLOCK = new JobBlock(ModProfessions.SPIRIT_POWER_CRAFTER_MASON, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
     //Test Block
     public static final Block TEST_BLOCK = new Block(FabricBlockSettings.of(Material.STONE, MaterialColor.LIGHT_BLUE).hardness(3.5f));
 
@@ -110,6 +115,11 @@ public class ModBlocks
     
     //Blocks with inventory
     public static final SpiritPowerCrafterBlock SPIRIT_POWER_CRAFTER = new SpiritPowerCrafterBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    
+    public static void registerBlockEntities() {
+    	JOB_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "tutorial:demo_block_entity", FabricBlockEntityTypeBuilder.create(JobBlockEntity::new, JOB_BLOCK).build(null));
+    }
+    
     public static void registerFrozen2ModBlocks() throws InputNotAnObjectException
     {
     	EasyRegister.createBlockList(
