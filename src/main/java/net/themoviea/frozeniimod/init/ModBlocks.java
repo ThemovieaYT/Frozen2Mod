@@ -99,6 +99,8 @@ public class ModBlocks
     public static final FrozenIIModPressurePlateBlock DARK_STONE_PRESSURE_PLATE = new FrozenIIModPressurePlateBlock(ActivationRule.MOBS, FabricBlockSettings.copyOf(DARK_STONE));
     public static final FrozenIIModStairsBlock DARK_STONE_STAIRS = new FrozenIIModStairsBlock(DARK_STONE.getDefaultState(), FabricBlockSettings.copyOf(DARK_STONE));
     
+    //Job Blocks
+    
     //Test Block
     public static final Block TEST_BLOCK = new Block(FabricBlockSettings.of(Material.STONE, MaterialColor.LIGHT_BLUE).hardness(3.5f));
 
