@@ -37,8 +37,6 @@ import net.themoviea.themovieapi_base.registering.EasyRegister;
 
 public class ModBlocks 
 {
-	public static final BlockEntityType<JobBlockEntity> JOB_BLOCK_ENTITY;
-
 	
 	//Enchanted Tree
     public static final PillarBlock ENCHANTED_TREE_LOG = new PillarBlock(FabricBlockSettings.of(Material.WOOD, MaterialColor.WHITE).hardness(2.0f).resistance(2.0f).sounds(BlockSoundGroup.WOOD));
@@ -115,10 +113,6 @@ public class ModBlocks
     
     //Blocks with inventory
     public static final SpiritPowerCrafterBlock SPIRIT_POWER_CRAFTER = new SpiritPowerCrafterBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
-    
-    public static void registerBlockEntities() {
-    	JOB_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, "tutorial:demo_block_entity", FabricBlockEntityTypeBuilder.create(JobBlockEntity::new, JOB_BLOCK).build(null));
-    }
     
     public static void registerFrozen2ModBlocks() throws InputNotAnObjectException
     {

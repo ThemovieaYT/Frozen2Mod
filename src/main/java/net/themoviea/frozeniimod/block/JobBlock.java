@@ -9,7 +9,7 @@ import net.themoviea.frozeniimod.block.entity.JobBlockEntity;
 import net.themoviea.frozeniimod.init.ModBlocks;
 import net.themoviea.themovieapi_village.village.EntityProfession;
 
-public class JobBlock extends Block implements BlockEntityProvider {
+public class JobBlock extends Block {
 	private final EntityProfession profession;
 
 	public JobBlock(EntityProfession profession, Settings settings) {
@@ -19,11 +19,5 @@ public class JobBlock extends Block implements BlockEntityProvider {
 
 	public EntityProfession getProfession() {
 		return this.profession;
-	}
-
-	@Override
-	public BlockEntity createBlockEntity(BlockView world) {
-		// TODO Auto-generated method stub
-		return new JobBlockEntity(ModBlocks.JOB_BLOCK_ENTITY);
 	}
 }
