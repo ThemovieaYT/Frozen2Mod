@@ -1,6 +1,5 @@
 package net.themoviea.frozeniimod.block;
 
-import net.minecraft.block.BlockState;
 import net.minecraft.block.PressurePlateBlock;
 
 public class FrozenIIModPressurePlateBlock extends PressurePlateBlock
