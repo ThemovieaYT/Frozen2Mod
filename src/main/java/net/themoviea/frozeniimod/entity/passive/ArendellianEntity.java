@@ -275,6 +275,18 @@ public class ArendellianEntity extends AbstractCommunicationTraderEntity impleme
 	}
 	
 	@Override
+	public CompoundTag toTag(CompoundTag tag) {
+		// TODO Auto-generated method stub
+		return super.toTag(tag);
+	}
+	
+	@Override
+	public void fromTag(CompoundTag tag) {
+		// TODO Auto-generated method stub
+		super.fromTag(tag);
+	}
+	
+	@Override
 	public void writeCustomDataToTag(CompoundTag tag) {
 		super.writeCustomDataToTag(tag);
 		DataResult<Tag> dataResult = VillageEntityData.CODEC.encodeStart(NbtOps.INSTANCE, this.getVillageEntityData());

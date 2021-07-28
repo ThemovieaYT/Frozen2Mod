@@ -19,19 +19,19 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:2.7.4"
 	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:2.7.4"
-	modApi "com.github.ThemovieaYT:ThemovieAPI-base:4659aa7b24"
+	include "com.github.ThemovieaYT:ThemovieAPI-base:4af165c981"
 	modApi "com.github.ThemovieaYT:ThemovieAPI-gui:1537e0a3df"
 	modApi "com.github.ThemovieaYT:ThemovieAPI-village:410da723a9"
-	modApi "com.github.ThemovieaYT:ThemovieAPI-entity:1e1a2774dc"
+	modApi "com.github.ThemovieaYT:ThemovieAPI-entity:77a7a19756"
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modApi "me.shedaniel:RoughlyEnoughItems:5.8.9"
 	//including libraries as nested jars.
 	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:2.7.4"
 	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:2.7.4"
-	include "com.github.ThemovieaYT:ThemovieAPI-base:4659aa7b24"
+	include "com.github.ThemovieaYT:ThemovieAPI-base:4af165c981"
 	include "com.github.ThemovieaYT:ThemovieAPI-gui:1537e0a3df"
 	include "com.github.ThemovieaYT:ThemovieAPI-village:410da723a9"
-	include "com.github.ThemovieaYT:ThemovieAPI-entity:1e1a2774dc"
+	include "com.github.ThemovieaYT:ThemovieAPI-entity:77a7a19756"
 }
 
 processResources {
