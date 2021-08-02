@@ -94,7 +94,6 @@ public class ElsaEntity extends AbstractCommunicationEntity implements Angerable
     
     public void setQueenProfession() {
     	if(this.getQueen() == true) {
-    		this.setVillageEntityData(this.getVillageEntityData().withProfession(ModProfessions.QUEEN).withVillageEntityType(VillageEntityType.NONE));
     	}
     }
     
