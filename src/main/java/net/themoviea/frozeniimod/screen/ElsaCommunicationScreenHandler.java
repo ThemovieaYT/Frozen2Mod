@@ -9,9 +9,10 @@ import net.themoviea.frozeniimod.entity.passive.ElsaEntity;
 import net.themoviea.frozeniimod.init.ModScreenHandlers;
 
 public class ElsaCommunicationScreenHandler extends ScreenHandler {
-	private static ElsaEntity elsa;
+	private ElsaEntity elsa;
 	private final ScreenHandlerContext context;
 	private final PlayerEntity player;
+	
 	public ElsaCommunicationScreenHandler(int syncId, PlayerInventory playerInventory) {
 		this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
 	}
@@ -20,6 +21,11 @@ public class ElsaCommunicationScreenHandler extends ScreenHandler {
 		super(ModScreenHandlers.ELSA_COMMS, syncId);
 		this.player = playerInventory.player;
 		this.context = context;
+	}
+	
+	public ElsaCommunicationScreenHandler setElsa(ElsaEntity elsa) {
+		this.elsa = elsa;
+		return this;
 	}
 
 	@Override

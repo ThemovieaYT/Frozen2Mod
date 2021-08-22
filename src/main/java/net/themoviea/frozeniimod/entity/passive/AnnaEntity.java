@@ -67,17 +67,6 @@ public class AnnaEntity extends AbstractCommunicationEntity implements Angerable
 		this.customGoalSelector.addScheduled(2300, 300, new RandomGoal(ImmutableList.of(new SwimGoal(this), new FollowTargetGoal(this, PlayerEntity.class, false), new WanderAroundGoal(this, 0.11D)), 60));
 	}
 	
-	@SuppressWarnings("unchecked")
-	public Brain<AnnaEntity> getBrain() 
-	{
-	      return (Brain<AnnaEntity>) super.getBrain();
-	}
-
-	protected Brain.Profile<AnnaEntity> createBrainProfile() 
-	{
-	      return Brain.createProfile(MEMORY_MODULE_TYPES, SENSOR_TYPES);
-	}
-	
 	@Override
 	public boolean canTarget(EntityType<?> type) 
 	{

@@ -99,6 +99,10 @@ public class ModBlocks
     //Job Blocks
     
     public static final JobBlock JOB_BLOCK = new JobBlock(ModProfessions.SPIRIT_POWER_CRAFTER_MASON, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+    public static final JobBlock BREAD_TABLE = new JobBlock(ModProfessions.SPIRIT_POWER_CRAFTER_MASON, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+    public static final JobBlock CLOTH_DESIGNER = new JobBlock(ModProfessions.SPIRIT_POWER_CRAFTER_MASON, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+    public static final JobBlock QUEEN_WORKSTATION = new JobBlock(ModProfessions.SPIRIT_POWER_CRAFTER_MASON, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+    
     //Test Block
     public static final Block TEST_BLOCK = new Block(FabricBlockSettings.of(Material.STONE, MaterialColor.LIGHT_BLUE).hardness(3.5f));
 
@@ -141,6 +145,9 @@ public class ModBlocks
     			//Dark Stone
     			DARK_STONE, "dark_stone", DARK_STONE_PEBBLES, "dark_stone_pebbles", DARK_STONE_SLAB, "dark_stone_slab", DARK_STONE_WALL, "dark_stone_wall", 
     			DARK_STONE_PRESSURE_PLATE, "dark_stone_pressure_plate", DARK_STONE_STAIRS, "dark_stone_stairs",
+    			
+    			//Job Blocks
+    			JOB_BLOCK, "job_block", BREAD_TABLE, "bread_table", CLOTH_DESIGNER, "cloth_designer", QUEEN_WORKSTATION, "queen_workstation",
     			
     			//TestBlock
     			TEST_BLOCK, "test_block",

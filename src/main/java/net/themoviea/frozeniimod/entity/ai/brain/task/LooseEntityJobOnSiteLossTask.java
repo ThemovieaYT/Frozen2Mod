@@ -26,6 +26,6 @@ public class LooseEntityJobOnSiteLossTask extends Task<ArendellianEntity> {
 	@Override
 	protected void run(ServerWorld world, ArendellianEntity entity, long time) {
 		entity.setVillageEntityData(entity.getVillageEntityData().withProfession(EntityProfession.NONE));
-		entity.reinitializeBrain(world);
+		//entity.reinitializeBrain(world);
 	}
 }

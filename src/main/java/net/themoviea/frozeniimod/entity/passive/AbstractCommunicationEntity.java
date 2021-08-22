@@ -27,10 +27,11 @@ import net.themoviea.frozeniimod.entity.Communicator;
 import net.themoviea.frozeniimod.entity.Queenable;
 import net.themoviea.frozeniimod.frozeniivillage.arendelle.ArendellianRepComponent;
 import net.themoviea.frozeniimod.init.ModComponents;
+import net.themoviea.themovieapi_entity.entity.SimpleBrainEntity;
 import net.themoviea.themovieapi_entity.entity.ai.CustomGoalSelector;
 
 
-public abstract class AbstractCommunicationEntity extends PathAwareEntity implements Npc, Communicator, Queenable
+public abstract class AbstractCommunicationEntity extends SimpleBrainEntity implements Npc, Communicator, Queenable
 {
     @Nullable
     private static AbstractCommunicationEntity instance;

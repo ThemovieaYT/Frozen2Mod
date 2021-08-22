@@ -44,7 +44,7 @@ public class EntityGoToWorkTask extends Task<ArendellianEntity> {
 				}).findFirst();
 			}).ifPresent((entityProfession) -> {
 				entity.setVillageEntityData(entity.getVillageEntityData().withProfession(entityProfession));
-				entity.reinitializeBrain(world);
+				//entity.reinitializeBrain(world);
 			});
 		}
 	}

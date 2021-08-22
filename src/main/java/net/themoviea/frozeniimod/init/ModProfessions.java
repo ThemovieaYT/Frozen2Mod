@@ -30,7 +30,7 @@ import net.themoviea.themovieapi_village.village.ThemovieAPITradeOffers;
 public class ModProfessions {
 //	public static final PointOfInterestType QUEENPOI = PointOfInterestHelper.register(new Identifier("frozeniimod", "queenpoi"), 1, 45, ModBlocks.SPIRIT_POWER_CRAFTER);
 	public static final EntityProfession STUFF = EntityProfession.register(new Identifier("frozeniimod", "stuff").toString(), PointOfInterestType.ARMORER, SoundEvents.ENTITY_VILLAGER_WORK_ARMORER);
-	public static final EntityProfession SPIRIT_POWER_CRAFTER_MASON = EntityProfession.register(new Identifier("frozeniimod", "spirit_power_crafter_mason").toString(), ModPointOfInterestTypes.SPIRIT_POWER_CRAFTER, SoundEvents.ENTITY_VILLAGER_WORK_MASON);
+	public static final EntityProfession SPIRIT_POWER_CRAFTER_MASON = EntityProfession.register(new Identifier("frozeniimod", "spirit_power_crafter_mason").toString(), PointOfInterestType.ARMORER, SoundEvents.ENTITY_VILLAGER_WORK_MASON);
 	public static void registerCustomProfessions() {
 		ThemovieAPITradeOffers.addTradeOffersToProfessions(ModProfessions.SPIRIT_POWER_CRAFTER_MASON, ImmutableMap.of(1, new ThemovieAPITradeOffers.Factory[]{new ThemovieAPITradeOffers.OneEmeraldFactory(Items.OAK_PLANKS, 2, 30, 10),new GetNeededItemFactory(Items.ANDESITE, Items.DIORITE, 2, 10)}));
 	}

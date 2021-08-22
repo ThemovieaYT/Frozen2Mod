@@ -7,6 +7,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.villager.VillagerProfessionBuilder;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.ai.brain.Activity;
 import net.minecraft.entity.ai.brain.Schedule;
@@ -15,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.themoviea.frozeniimod.block.entity.TradingStationBlockEntity;
 import net.themoviea.frozeniimod.entity.ai.brain.ArendellianSchedule;
 import net.themoviea.frozeniimod.init.ModBiomes;
 import net.themoviea.frozeniimod.init.ModBlocks;
@@ -52,6 +55,8 @@ public class Frozen2Mod implements ModInitializer
 	public static final ItemGroup FROZEN_II_MOD_DECORATION_BLOCKS = FabricItemGroupBuilder.build(new Identifier("frozeniimod", "frozeniidecorationblocks"), () -> new ItemStack(ModBlocks.ENCHANTED_FENCE));
 	public static final ItemGroup FROZEN_II_MOD_REDSTONE = FabricItemGroupBuilder.build(new Identifier("frozeniimod", "frozeniiredstone"), () -> new ItemStack(ModBlocks.ENCHANTED_PRESSURE_PLATE));
 	
+	public static BlockEntityType<TradingStationBlockEntity> TRADING_STATION;
+	
 	@Override
 	public void onInitialize() 
 	{
@@ -72,6 +77,8 @@ public class Frozen2Mod implements ModInitializer
 		ModFeatures.registerFrozen2ModFeatures();
 		ModTrunkPlacers.registerFrozen2TrunkPlacers();
 		ArendellianSchedule.registerArendellianSchedule();
+		
+		TRADING_STATION = Registry.register(Registry.BLOCK_ENTITY_TYPE, "frozeniimod:trading_station_entity", BlockEntityType.Builder.create(TradingStationBlockEntity::new).build(null));
 
 		//BlockRenderLayers
 		//Registry.register(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, "frozeniimod:test_feature", FrozenIIModConfiguredFeatures.FEATURE_CONFIGURED);

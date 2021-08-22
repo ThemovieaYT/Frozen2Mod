@@ -63,11 +63,14 @@ import net.themoviea.frozeniimod.entity.ai.goal.TrackElsaTargetGoal;
 import net.themoviea.frozeniimod.entity.boss.GhostFifthSpiritElsaEntity;
 import net.themoviea.frozeniimod.entity.projectile.IcePowerEntity;
 import net.themoviea.frozeniimod.frozeniivillage.arendelle.ArendellianRepComponent;
+import net.themoviea.frozeniimod.init.ModBlocks;
 import net.themoviea.frozeniimod.init.ModComponents;
 import net.themoviea.frozeniimod.init.ModEntities;
 import net.themoviea.frozeniimod.init.ModProfessions;
 import net.themoviea.frozeniimod.screen.ElsaCommunicationScreenHandler;
 import net.themoviea.frozeniimod.screen.SpiritPowerCraftingScreenHandler;
+import net.themoviea.themovieapi_entity.entity.ai.goals.GoToPOIGoal;
+import net.themoviea.themovieapi_entity.entity.ai.goals.StorePOIGoal;
 import net.themoviea.themovieapi_village.entity.data.TrackedDataHandlerRegister;
 import net.themoviea.themovieapi_village.village.EntityProfession;
 import net.themoviea.themovieapi_village.village.VillageEntityData;
@@ -94,6 +97,7 @@ public class ElsaEntity extends AbstractCommunicationEntity implements Angerable
     
     public void setQueenProfession() {
     	if(this.getQueen() == true) {
+    		
     	}
     }
     
@@ -112,37 +116,11 @@ public class ElsaEntity extends AbstractCommunicationEntity implements Angerable
     	this.targetSelector.add(4, new UniversalAngerGoal(this, false));
     }
     
-    @SuppressWarnings("unchecked")
-	public Brain<ElsaEntity> getBrain() 
-	{
-	 	return (Brain<ElsaEntity>) super.getBrain();
-	}
-
-	protected Brain.Profile<ElsaEntity> createBrainProfile() 
-	{
-		return Brain.createProfile(MEMORY_MODULE_TYPES, SENSOR_TYPES);
-	}
-	
-	public void reinitializeBrain(ServerWorld world) {
-		Brain<ElsaEntity> brain = this.getBrain();
-		brain.stopAllTasks(world, this);
-		this.brain = brain.copy();
-		this.initBrain(this.getBrain());
-	}
-	
-	@Override
-	protected Brain<?> deserializeBrain(Dynamic<?> dynamic) {
-		@SuppressWarnings("unchecked")
-		Brain<ElsaEntity> brain = (Brain<ElsaEntity>) this.createBrainProfile().deserialize(dynamic);
-		this.initBrain(brain);
-		return brain;
-	}
-	
-	private void initBrain(Brain<ElsaEntity> brain) {
-		EntityProfession entityProfession = this.getVillageEntityData().getProfession();
-		
-		brain.setTaskList(Activity.CORE, ArendellianTaskListProvider.createCoreElsaTasks(entityProfession, 0.5f));
-	}
+    @Override
+    protected void initScheduledGoals() {
+    	this.customGoalSelector.addScheduled(300, 40, new StorePOIGoal(this, ModBlocks.QUEEN_WORKSTATION.getDefaultState()));
+    	this.customGoalSelector.addScheduled(600, 40, new GoToPOIGoal(this));
+    }
 	
 	public void setVillageEntityData(VillageEntityData villageEntityData) {
 		this.dataTracker.set(VILLAGE_ENTITY_DATA, villageEntityData);

@@ -10,7 +10,7 @@ import net.themoviea.themovieapi_village.village.EntityProfession;
 
 public class JobBlock extends Block {
 	private final EntityProfession profession;
-	public static final BooleanProperty OCCUPIED = BooleanProperty.of("OCCUPIED");
+	public static final BooleanProperty OCCUPIED = BooleanProperty.of("occupied");
 
 	public JobBlock(EntityProfession profession, Settings settings) {
 		super(settings);

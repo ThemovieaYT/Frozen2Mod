@@ -60,6 +60,7 @@ import net.themoviea.frozeniimod.init.ModComponents;
 import net.themoviea.frozeniimod.init.ModItems;
 import net.themoviea.frozeniimod.init.ModProfessions;
 import net.themoviea.frozeniimod.init.ModProfessions.GetNeededItemFactory;
+import net.themoviea.themovieapi_entity.entity.ai.goals.StorePOIGoal;
 import net.themoviea.themovieapi_village.entity.data.TrackedDataHandlerRegister;
 import net.themoviea.themovieapi_village.village.EntityProfession;
 import net.themoviea.themovieapi_village.village.ThemovieAPITradeOffers;
@@ -90,7 +91,7 @@ public class ArendellianEntity extends AbstractCommunicationTraderEntity impleme
 		return super.getInventory();
 	}
 	
-	@SuppressWarnings("unchecked")
+	/*@SuppressWarnings("unchecked")
 	public Brain<ArendellianEntity> getBrain() {
 		return (Brain<ArendellianEntity>) super.getBrain();
 	}
@@ -98,7 +99,7 @@ public class ArendellianEntity extends AbstractCommunicationTraderEntity impleme
 	public void reinitializeBrain(ServerWorld world) {
 		Brain<ArendellianEntity> brain = this.getBrain();
 		brain.stopAllTasks(world, this);
-		this.brain = brain.copy();
+		this.simp = brain.copy();
 		this.initBrain(this.getBrain());
 	}
 
@@ -127,7 +128,7 @@ public class ArendellianEntity extends AbstractCommunicationTraderEntity impleme
 		brain.setDefaultActivity(Activity.IDLE);
 	    brain.doExclusively(Activity.IDLE);
 		brain.refreshActivities(this.world.getTimeOfDay(), this.world.getTime());
-	}
+	}*/
 	
 	public void setVillageEntityData(VillageEntityData villageEntityData) {
 		VillageEntityData villageEntityData2 = this.getVillageEntityData();
@@ -146,9 +147,6 @@ public class ArendellianEntity extends AbstractCommunicationTraderEntity impleme
 	
 	@Override
 	protected void mobTick() {
-		this.world.getProfiler().push("arendellianBrain");
-	    this.getBrain().tick((ServerWorld)this.world, this);
-	    this.world.getProfiler().pop();
 	    super.mobTick();
 	}
 	

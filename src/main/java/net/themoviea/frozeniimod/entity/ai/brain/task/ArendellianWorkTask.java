@@ -35,12 +35,12 @@ public class ArendellianWorkTask extends Task<ArendellianEntity> {
 
 	   protected void run(ServerWorld serverWorld, ArendellianEntity villagerEntity, long l) {
 		   System.out.println("Currently Working!");
-	      Brain<ArendellianEntity> brain = villagerEntity.getBrain();
-	      brain.remember(MemoryModuleType.LAST_WORKED_AT_POI, l);
-	      brain.getOptionalMemory(MemoryModuleType.JOB_SITE).ifPresent((globalPos) -> {
-	         brain.remember(MemoryModuleType.LOOK_TARGET, (new BlockPosLookTarget(globalPos.getPos())));
-	      });
-	      this.performAdditionalWork(serverWorld, villagerEntity);
+	      //Brain<ArendellianEntity> brain = villagerEntity.getBrain();
+	      //brain.remember(MemoryModuleType.LAST_WORKED_AT_POI, l);
+	     // brain.getOptionalMemory(MemoryModuleType.JOB_SITE).ifPresent((globalPos) -> {
+	      //   brain.remember(MemoryModuleType.LOOK_TARGET, (new BlockPosLookTarget(globalPos.getPos())));
+	     // });
+	      //this.performAdditionalWork(serverWorld, villagerEntity);
 
 	   }
 

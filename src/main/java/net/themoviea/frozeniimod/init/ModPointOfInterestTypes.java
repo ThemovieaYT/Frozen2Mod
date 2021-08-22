@@ -12,7 +12,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModPointOfInterestTypes {
-	public static final PointOfInterestType SPIRIT_POWER_CRAFTER = PointOfInterestHelper.register(new Identifier("frozeniimod", "spirit_power_crafter_job"), 1, 1, ModBlocks.SPIRIT_POWER_CRAFTER);
 
 	public ModPointOfInterestTypes()
 	{
